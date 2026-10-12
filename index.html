@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Library — Колледж кітапханасы</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            color: #333;
+        }
+
+        header {
+            background: #dedede;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background: #c7c7c7;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #777;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #e5e5e5, #fafafa);
+        }
+
+        .hero h2 {
+            font-size: 32px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #777;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .card h3 {
+            color: #555;
+        }
+
+        .book-cover {
+            background: #e2e2e2;
+            padding: 25px 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #c7c7c7;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                margin: 7px;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pink Library</h1>
+    <p>Колледж кітапханасының веб-сайты</p>
+</header>
+
+<nav>
+    <a href="#home">Басты бет</a>
+    <a href="#books">Кітаптар</a>
+    <a href="#authors">Авторлар</a>
+    <a href="#events">Жарыстар</a>
+    <a href="#contact">Байланыс</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Колледж кітапханасына қош келдіңіз!</h2>
+    <p>Кітап оқыңыз, білім алыңыз және қазақ әдебиетінің мұрасын таныңыз.</p>
+    <a class="button" href="#books">Кітаптарды қарау</a>
+</section>
+
+<main>
+
+    <section id="books">
+        <h2 class="section-title">Электронды кітапхана</h2>
+
+        <div class="grid">
+            <div class="card">
+                <div class="book-cover">ҚАРА СӨЗДЕР</div>
+                <h3>Абай Құнанбайұлы</h3>
+                <p>Адамгершілік, білім және тәрбие туралы философиялық шығарма.</p>
+                <a class="button" href="https://adebiportal.kz/" target="_blank" rel="noopener">Оқу материалдары</a>
+            </div>
+
+            <div class="card">
+                <div class="book-cover">АҚҚУЛАР ҰЙЫҚТАҒАНДА</div>
+                <h3>Мұқағали Мақатаев</h3>
+                <p>Қазақ поэзиясының көрнекті шығармаларының бірі.</p>
+                <a class="button" href="https://adebiportal.kz/" target="_blank" rel="noopener">Шығармаларды іздеу</a>
+            </div>
+
+            <div class="card">
+                <div class="book-cover">КЕЛ, БАЛАЛАР, ОҚЫЛЫҚ!</div>
+                <h3>Ыбырай Алтынсарин</h3>
+                <p>Балаларды білім мен өнерге шақыратын шығарма.</p>
+                <a class="button" href="https://altynsarin.rnpb.kz/" target="_blank" rel="noopener">Оқу материалдары</a>
+            </div>
+
+            <div class="card">
+                <div class="book-cover">ҚЫРЫҚ МЫСАЛ</div>
+                <h3>Ахмет Байтұрсынұлы</h3>
+                <p>Тәрбиелік мағынасы терең мысалдар жинағы.</p>
+                <a class="button" href="https://baitursynuly-museum.kz/" target="_blank" rel="noopener">Мұрасын қарау</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="authors">
+        <h2 class="section-title">Қазақ әдебиетінің тұлғалары</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Абай Құнанбайұлы</h3>
+                <p>1845–1904. Ұлы ақын, ойшыл және ағартушы. Білім мен адамгершілікті дәріптеген.</p>
+            </div>
+
+            <div class="card">
+                <h3>Мұқағали Мақатаев</h3>
+                <p>1931–1976. Қазақ әдебиетінің көрнекті лирик ақыны.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ыбырай Алтынсарин</h3>
+                <p>1841–1889. Ағартушы, педагог және жазушы.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ахмет Байтұрсынұлы</h3>
+                <p>1872–1937. Ұлт ұстазы, тіл ғалымы және ағартушы.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 class="section-title">Жарыстар мен іс-шаралар</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Үздік оқырман</h3>
+                <p>Сүйікті кітабыңды таныстырып, оқырмандық қабілетіңді көрсет.</p>
+            </div>
+
+            <div class="card">
+                <h3>Әдеби викторина</h3>
+                <p>Қазақ ақындары мен жазушылары туралы біліміңді тексер.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Байланыс</h2>
+
+        <div class="card">
+            <p><strong>Мекеме:</strong> Колледж кітапханасы</p>
+            <p><strong>Мекенжай:</strong> Колледждің мекенжайын осы жерге енгізіңіз.</p>
+            <p><strong>Жұмыс уақыты:</strong> Кітапхана кестесін осы жерге енгізіңіз.</p>
+            <a class="button" href="https://www.google.com/maps" target="_blank" rel="noopener">Картаны ашу</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <strong>Pink Library</strong>
+    <p>Колледж кітапханасы — білім мен ізденіс мекені.</p>
+    <p>2026</p>
+</footer>
+
+</body>
+</html>
